@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#241238">
+
+    <title>Violet Machine 💜</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app-shell">
+
+        <!-- CABECERA -->
+
+        <header class="topbar">
+
+            <a class="brand" href="#" id="brandHome">
+                <span class="brand-flower">✿</span>
+                <span>VIOLET <b>MACHINE</b></span>
+            </a>
+
+            <div class="top-note">
+                <span class="live-dot"></span>
+                EDICIÓN ESPECIAL · 09 NOV
+            </div>
+
+        </header>
+
+
+        <!-- PANTALLA INICIAL -->
+
+        <section class="screen active" id="homeScreen">
+
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span>✦</span>
+                    FLOWER STATION Nº 09
+                    <span>✦</span>
+                </div>
+
+                <h1>
+                    Hoy toca llevarse
+                    <br>
+                    <em>unas violetas.</em>
+                </h1>
+
+                <p>
+                    Una máquina, unas cuantas elecciones
+                    <br class="desktop-only">
+                    y un ramo esperando al otro lado.
+                </p>
+
+                <button class="primary-btn" id="startBtn">
+                    ELEGIR MIS FLORES
+                    <span>↗</span>
+                </button>
+
+                <div class="route-note">
+                    <span class="route-wave">〰</span>
+
+                    <span>
+                        Próxima parada:
+                        <b>Asturias ↔ Murcia</b>
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- MÁQUINA EXPENDEDORA -->
+
+            <div class="machine-wrap">
+
+                <div class="machine-glow"></div>
+
+                <div class="machine">
+
+                    <div class="machine-sign">
+
+                        <span class="sign-spark">✳</span>
+
+                        <div>
+                            Violet
+                            <em>Machine</em>
+                        </div>
+
+                        <span class="sign-spark">✳</span>
+
+                    </div>
+
+
+                    <div class="machine-window">
+
+                        <div class="window-top">
+                            <span>FRESH FLOWERS</span>
+                            <span class="window-light"></span>
+                            <span>24/7</span>
+                        </div>
+
+                        <div class="shelf">
+
+                            <div class="mini-bouquet bouquet-a">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <b></b>
+                            </div>
+
+                            <div class="mini-bouquet bouquet-b">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <b></b>
+                            </div>
+
+                            <div class="mini-bouquet bouquet-c">
+                                <i></i><i></i><i></i><i></i><i></i>
+                                <b></b>
+                            </div>
+
+                        </div>
+
+                        <div class="shelf-labels">
+                            <span>01 · VIOLETS</span>
+                            <span>02 · VIOLETS</span>
+                            <span>03 · VIOLETS</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="machine-controls">
+
+                        <div class="screen-sticker">
+                            <span>✿</span>
+                            <b>
+                                Un detalle
+                                <br>
+                                en flor
+                            </b>
+                        </div>
+
+                        <div class="coin-slot">
+                            <span></span>
+                            <small>INSERT COIN</small>
+                        </div>
+
+                        <div class="pickup">
+                            <span>
+                                YOUR FLOWERS
+                                <br>
+                                ARE WAITING
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="machine-base">
+                        <span>VM — 0911</span>
+                        <span>MADE WITH A LITTLE MAGIC</span>
+                    </div>
+
+                </div>
+
+
+                <div class="machine-side-note">
+
+                    <span class="side-cross">✚</span>
+
+                    <b>FLORES</b>
+
+                    <small>recién elegidas</small>
+
+                    <span class="side-wave">〰</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="home-footer">
+                <span>HECHA PARA SACAR UNA SONRISA</span>
+                <span>✿</span>
+                <span>NO SE ACEPTAN DÍAS GRISES</span>
+            </div>
+
+        </section>
+
+
+        <!-- PANTALLA DE ELECCIONES -->
+
+        <section class="screen chooser-screen" id="choiceScreen">
+
+            <div class="choice-heading">
+
+                <button class="back-btn" id="backBtn">
+                    ←
+                </button>
+
+                <div class="step-label" id="stepLabel">
+                    PASO 01 / 03
+                </div>
+
+                <div class="progress">
+                    <span id="progressBar"></span>
+                </div>
+
+            </div>
+
+
+            <div class="choice-content">
+
+                <div class="choice-intro">
+
+                    <span class="tiny-flower">✿</span>
+
+                    <h2 id="choiceTitle">
+                        ¿Qué estilo de ramo
+                        <br>
+                        te apetece?
+                    </h2>
+
+                    <p id="choiceSubtitle">
+                        Tú eliges. La máquina hace el resto.
+                    </p>
+
+                </div>
+
+
+                <div class="options" id="options">
+                    <!-- Las opciones se generan desde JavaScript -->
+                </div>
+
+
+                <div class="choice-bottom">
+
+                    <span class="selection-hint" id="selectionHint">
+                        ELIGE UNA OPCIÓN
+                    </span>
+
+                    <button class="primary-btn next-btn" id="nextBtn">
+                        SIGUIENTE
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="choice-decoration deco-left">✿</div>
+            <div class="choice-decoration deco-right">✧</div>
+
+        </section>
+
+
+        <!-- PANTALLA DE PREPARACIÓN -->
+
+        <section class="screen preparing-screen" id="preparingScreen">
+
+            <div class="preparing-card">
+
+                <div class="preparing-kicker">
+                    VIOLET MACHINE · WORKING
+                </div>
+
+                <div class="spinner-flower">
+                    ✿
+                </div>
+
+                <h2 id="prepareTitle">
+                    Preparando tu ramo...
+                </h2>
+
+                <p id="prepareText">
+                    Un momento, que las flores llevan su proceso.
+                </p>
+
+                <div class="loading-track">
+                    <span></span>
+                </div>
+
+                <div class="machine-status">
+                    <span class="live-dot"></span>
+                    SELECCIÓN COMPLETADA
+                </div>
+
+            </div>
+
+            <div class="petal petal-one">✿</div>
+            <div class="petal petal-two">✿</div>
+            <div class="petal petal-three">✿</div>
+
+        </section>
+
+
+        <!-- RESULTADO FINAL -->
+
+        <section class="screen result-screen" id="resultScreen">
+
+            <div class="result-topline">
+
+                <span>✿ PEDIDO PREPARADO</span>
+
+                <span>VIOLET MACHINE / 09</span>
+
+            </div>
+
+
+            <div class="result-layout">
+
+
+                <!-- RAMO -->
+
+                <div class="bouquet-stage">
+
+                    <div class="bouquet-halo"></div>
+
+                    <div class="confetti confetti-one">✧</div>
+                    <div class="confetti confetti-two">✿</div>
+                    <div class="confetti confetti-three">✧</div>
+
+                    <div class="bouquet-illustration" id="bouquetIllustration">
+
+                        <!-- El ramo SVG se añadirá en el siguiente paso -->
+
+                    </div>
+
+                    <div class="bouquet-caption">
+                        <span>FRESHLY PICKED</span>
+                        <span>✿</span>
+                        <span>JUST FOR TODAY</span>
+                    </div>
+
+                </div>
+
+
+                <!-- TICKET -->
+
+                <div class="receipt">
+
+                    <div class="receipt-head">
+
+                        <span class="receipt-flower">✿</span>
+
+                        <div>
+                            VIOLET
+                            <br>
+                            <b>MACHINE</b>
+                        </div>
+
+                        <span class="receipt-number">
+                            Nº 0911
+                        </span>
+
+                    </div>
+
+
+                    <div class="receipt-rule"></div>
+
+
+                    <div class="receipt-title">
+                        TU PEDIDO
+                    </div>
+
+
+                    <div class="receipt-row">
+                        <span>Producto</span>
+                        <b>Ramo de violetas</b>
+                    </div>
+
+                    <div class="receipt-row">
+                        <span>Estilo</span>
+                        <b id="receiptStyle">Especial</b>
+                    </div>
+
+                    <div class="receipt-row">
+                        <span>Envoltorio</span>
+                        <b id="receiptWrap">Lavanda</b>
+                    </div>
+
+                    <div class="receipt-row">
+                        <span>Extra</span>
+                        <b id="receiptExtra">Lazo morado</b>
+                    </div>
+
+
+                    <div class="receipt-rule dashed"></div>
+
+
+                    <div class="receipt-route">
+                        <span>↗</span>
+
+                        <div>
+                            <small>ORIGEN</small>
+                            <b>Asturias</b>
+                        </div>
+                    </div>
+
+                    <div class="receipt-route">
+                        <span>⌖</span>
+
+                        <div>
+                            <small>DESTINO</small>
+                            <b>Murcia</b>
+                        </div>
+                    </div>
+
+
+                    <div class="receipt-stamp">
+                        PEDIDO LISTO
+                    </div>
+
+
+                    <p class="receipt-goodbye">
+                        Que tengas un día
+                        <br>
+                        <em>lleno de violetas.</em>
+                    </p>
+
+
+                    <div class="barcode">
+                        ▌▌ ▌▌▌ ▌ ▌▌▌ ▌▌ ▌▌▌
+                    </div>
+
+                    <div class="receipt-foot">
+                        GRACIAS POR PASARTE ✿
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-bottom">
+
+                <span>UNA PEQUEÑA SORPRESA A DISTANCIA</span>
+
+                <button class="restart-btn" id="restartBtn">
+                    VOLVER A LA MÁQUINA ↗
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
